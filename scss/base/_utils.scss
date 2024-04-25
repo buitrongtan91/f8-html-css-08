@@ -1,0 +1,28 @@
+@use "./grid";
+
+$display-values: block, flex, grid, none;
+
+@function reverse($list) {
+    $reversed-list: ();
+    @for $i from length($list) to 1 {
+        $reversed-list: append($reversed-list, nth($list, $i));
+    }
+    @return $reversed-list;
+}
+
+@mixin make-display($breakpoint: null) {
+    $infix: if($breakpoint, "-#{$breakpoint}", "");
+    @each $display in $display-values {
+        .d#{$infix}-#{$display} {
+            display: $display !important;
+        }
+    }
+}
+
+@include make-display();
+
+@each $breakpoint, $dimension in reverse(grid.$grid-breakpoints) {
+    @media (max-width: ($dimension - 0.02)) {
+        @include make-display($breakpoint);
+    }
+}

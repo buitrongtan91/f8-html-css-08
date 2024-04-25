@@ -1,0 +1,30 @@
+.breadcrumbs {
+    background-color: var(--breadcrumbs-color);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    flex-wrap: wrap;
+
+    &__item {
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+
+        color: #9e9da8;
+        white-space: nowrap;
+        /* Medium 16 */
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 150%; /* 150% */
+
+        &--current {
+            color: inherit;
+        }
+    }
+}

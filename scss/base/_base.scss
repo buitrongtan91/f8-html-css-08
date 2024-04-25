@@ -1,0 +1,40 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Gordita, sans-serif;
+    color: var(--text-color);
+    background: var(--body-bgc);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.icon {
+    filter: var(--icon-color);
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    color: inherit;
+}
