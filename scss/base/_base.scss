@@ -21,7 +21,8 @@ a {
 }
 
 button,
-input {
+input,
+textarea {
     border: none;
     background: transparent;
     outline: none;
@@ -37,4 +38,13 @@ select,
 textarea {
     font-family: inherit;
     color: inherit;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+input:-webkit-autofill:hover {
+    transition: background-color 1s 9999s;
+    -webkit-text-fill-color: var(--webkit-text-fill-color);
+    caret-color: var(--caret-color);
 }

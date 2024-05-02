@@ -2,6 +2,7 @@
 .footer {
     padding: 50px 0;
     font-size: 1.4rem;
+    background: var(--footer-background);
     &__row {
         display: grid;
         grid-template-columns: 2fr 1.3fr 1fr 1fr 1.5fr;
@@ -34,7 +35,7 @@
         border-radius: 6px;
         border: 2px solid #d2d1d6;
         font-size: 1.5rem;
-        font-weight: 500;
+        font-weight: 400;
     }
     &__heading {
         text-transform: uppercase;

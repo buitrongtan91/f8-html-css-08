@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Payment | Grocery Mart</title>
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Scripts -->
+        <script src="./assets/js/script.js"></script>
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header-logined.html");
+        </script>
+
+        <main class="checkout-page">
+            <div class="container">
+                <!-- search bar -->
+                <div class="checkout-container">
+                    <div class="search-bar">
+                        <input type="text" name="" id="" class="search-bar__input" placeholder="Search for item" />
+                        <button class="search-bar__submit">
+                            <img src="./assets/icons/search.svg" alt="" class="search-bar__icon icon" />
+                        </button>
+                    </div>
+                </div>
+                <!-- breadcrumbs -->
+                <div class="checkout-container">
+                    <ul class="breadcrumbs checkout-page__breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a href="#!" class="breadcrumbs__link"
+                                >Home
+                                <img src="./assets/icons/arrow-right.svg" alt="" class="breadcrumbs__icon" />
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#!" class="breadcrumbs__link"
+                                >Checkout
+                                <img src="./assets/icons/arrow-right.svg" alt="" class="breadcrumbs__icon" />
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#!" class="breadcrumbs__link"
+                                >Shipping
+                                <img src="./assets/icons/arrow-right.svg" alt="" class="breadcrumbs__icon" />
+                            </a>
+                        </li>
+
+                        <li class="breadcrumbs__item">
+                            <a href="#!" class="breadcrumbs__link breadcrumbs__link--current">Payment method</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- check out -->
+                <div class="checkout-container">
+                    <div class="row gy-lg-4">
+                        <div class="col-8 col-lg-12">
+                            <div class="cart-info">
+                                <div class="cart-info__row">
+                                    <h2 class="cart-info__heading cart-info__heading--lv2">
+                                        1. Shipping, arrives between Mon, May 16—Tue, May 24
+                                    </h2>
+                                    <button class="cart-info__edit-btn">
+                                        <img src="./assets/icons/edit.svg" alt="icon" class="icon" />
+                                        Edit
+                                    </button>
+                                </div>
+
+                                <article class="payment-item">
+                                    <div class="payment-item__left">
+                                        <h3 class="payment-item__title">Imran Khan</h3>
+                                        <p class="payment-item__desc">Museum of Rajas, Sylhet Sadar, Sylhet 3100.</p>
+                                    </div>
+                                    <div class="payment-item__right">
+                                        <img src="./assets/icons/check.svg" alt="" class="payment-item__icon" />
+                                    </div>
+                                </article>
+                                <article class="payment-item">
+                                    <div class="payment-item__left">
+                                        <h3 class="payment-item__title">Items details</h3>
+                                        <p class="payment-item__desc">2 items</p>
+                                    </div>
+                                    <div class="payment-item__right">
+                                        <a href="" class="payment-item__link">View details</a>
+                                    </div>
+                                </article>
+
+                                <!-- cart list -->
+                            </div>
+                            <div class="cart-info">
+                                <div class="cart-info__row">
+                                    <h2 class="cart-info__heading cart-info__heading--lv2">2. Shipping method</h2>
+                                </div>
+                                <div class="cart-info__separate"></div>
+                                <h3 class="cart-info__sub-heading">Availeble Shipping method</h3>
+                                <article class="shipping-method">
+                                    <div class="shipping-method__left">
+                                        <div class="shipping-method__thumb">
+                                            <img
+                                                src="./assets/img/shipping-method/delivery-1.png"
+                                                alt=""
+                                                class="shipping-method__thumb-img"
+                                            />
+                                        </div>
+                                        <div class="shipping-method__content">
+                                            <h3 class="shipping-method__title">Fedex Delivery</h3>
+                                            <p class="shipping-method__desc">Delivery: 2-3 days work</p>
+                                        </div>
+                                    </div>
+                                    <div class="shipping-method__right">
+                                        <div class="shipping-method__cost shipping-method__cost--current">Free</div>
+                                        <label class="cart-info__checkbox">
+                                            <input
+                                                type="radio"
+                                                class="cart-info__checkbox-input"
+                                                name="shipping-method"
+                                                checked
+                                            />
+                                        </label>
+                                    </div>
+                                </article>
+
+                                <article class="shipping-method">
+                                    <div class="shipping-method__left">
+                                        <div class="shipping-method__thumb">
+                                            <img
+                                                src="./assets/img/shipping-method/delivery-2.png"
+                                                alt=""
+                                                class="shipping-method__thumb-img"
+                                            />
+                                        </div>
+                                        <div class="shipping-method__content">
+                                            <h3 class="shipping-method__title">DHL Delivery</h3>
+                                            <p class="shipping-method__desc">Delivery: 2-3 days work</p>
+                                        </div>
+                                    </div>
+                                    <div class="shipping-method__right">
+                                        <div class="shipping-method__cost">$12.00</div>
+                                        <label class="cart-info__checkbox">
+                                            <input
+                                                type="radio"
+                                                class="cart-info__checkbox-input"
+                                                name="shipping-method"
+                                            />
+                                        </label>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="col-4 col-lg-12">
+                            <div class="cart-info">
+                                <div class="payment-details">
+                                    <h3 class="payment-details__heading">Payment Details</h3>
+                                    <p class="payment-details__desc">
+                                        Complete your purchase item by providing your payment details order.
+                                    </p>
+                                </div>
+                                <form class="form">
+                                    <div class="form__group">
+                                        <label for="" class="form__label">Email Address</label>
+                                        <div class="form__text-input">
+                                            <input
+                                                placeholder="example@gmail.com"
+                                                type="email"
+                                                name="email"
+                                                id="email"
+                                                class="form__input"
+                                                required
+                                            />
+                                        </div>
+                                        <p class="form__error">*Email not in the correct format.</p>
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="" class="form__label">Card Holder</label>
+                                        <div class="form__text-input">
+                                            <input
+                                                placeholder="example@gmail.com"
+                                                type="text"
+                                                name="card-holder"
+                                                id="card-holder"
+                                                class="form__input"
+                                                required
+                                            />
+                                        </div>
+                                        <p class="form__error">*This field cannot be left blank</p>
+                                    </div>
+                                    <div class="form__group">
+                                        <label for="" class="form__label">Card Details</label>
+                                        <div class="form__text-input">
+                                            <input
+                                                placeholder="example@gmail.com"
+                                                type="text"
+                                                name="card-details"
+                                                id="card-details"
+                                                class="form__input"
+                                                required
+                                            />
+                                        </div>
+                                        <p class="form__error">*This field cannot be left blank</p>
+                                    </div>
+                                    <div class="form__row">
+                                        <div class="form__group">
+                                            <div class="form__text-input">
+                                                <input
+                                                    placeholder="MM/YY"
+                                                    type="tel"
+                                                    name="phone"
+                                                    id="phone"
+                                                    class="form__input"
+                                                    required
+                                                />
+                                            </div>
+                                            <p class="form__error">*Phone must be at least 1 characters</p>
+                                        </div>
+                                        <div class="form__group">
+                                            <div class="form__text-input">
+                                                <input
+                                                    placeholder="CVC"
+                                                    type="tel"
+                                                    name="phone"
+                                                    id="phone"
+                                                    class="form__input"
+                                                    required
+                                                />
+                                            </div>
+                                            <p class="form__error">*Phone must be at least 1 characters</p>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="cart-info__row">
+                                    <span
+                                        >Subtotal
+                                        <span class="cart-info__sub-label">(items)</span>
+                                    </span>
+                                    <span>3</span>
+                                </div>
+                                <div class="cart-info__row">
+                                    <span
+                                        >Price
+                                        <span class="cart-info__sub-label">(Total)</span>
+                                    </span>
+                                    <span>$191.65</span>
+                                </div>
+                                <div class="cart-info__row">
+                                    <span>Shipping:</span>
+                                    <span>$10.00</span>
+                                </div>
+                                <div class="cart-info__row-separate"></div>
+                                <div class="cart-info__row cart-info__row--bold">
+                                    <span>Estimated Total</span>
+                                    <span>$201.65</span>
+                                </div>
+
+                                <a href="" class="btn btn--primary btn--rounded cart-info__next-btn">Pay $465.98</a>
+                            </div>
+                            <div class="cart-info">
+                                <div class="gift-item">
+                                    <div class="gift-item__icon-wrap">
+                                        <img src="./assets/icons/gift.svg" alt="" class="gift-item__icon" />
+                                    </div>
+                                    <div class="gift-item__content">
+                                        <div class="gift-item__title">Send this order as a gift.</div>
+                                        <div class="gift-item__desc">
+                                            Available items will be shipped to your gift recipient.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer" class="footer"></footer>
+        <script>
+            load("#footer", "./templates/footer.html");
+        </script>
+    </body>
+</html>

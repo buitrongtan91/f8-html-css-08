@@ -1,0 +1,182 @@
+@use "../abstracts";
+
+.profile {
+    &-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    &__sidebar {
+        border-radius: 20px;
+        background: var(--profile-background);
+        box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+        overflow: hidden;
+    }
+    &-user {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px 20px;
+        background: linear-gradient(180deg, rgba(26, 22, 46, 0) 0%, #1a162e 100%),
+            url("../img/profile/background.png") no-repeat center / cover;
+        box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.2);
+
+        &__name {
+            margin-top: 20px;
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 144.444%; /* 144.444% */
+        }
+        &__desc {
+            color: #fafafd;
+
+            font-size: 1.5re;
+            font-weight: 500;
+            line-height: 146.667%; /* 146.667% */
+        }
+
+        &__avatar-wrap {
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            border-radius: 999px;
+            overflow: hidden;
+        }
+        &__avatar {
+            background: #ccc;
+            display: block;
+        }
+    }
+
+    &-menu {
+        &__title {
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 144.444%; /* 144.444% */
+        }
+        &__link {
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 146.667%; /* 146.667% */
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &:hover {
+                color: #0071dc;
+            }
+        }
+        &__list {
+            margin-top: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        &__icon {
+            img {
+                display: block;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    &-control {
+        margin-top: 30px;
+        padding: 0 30px 30px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.profile-content {
+    border-radius: 20px;
+    background: var(--profile-background);
+    padding: 30px;
+
+    &__heading {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 141.667%; /* 141.667% */
+    }
+    &__desc {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 146.667%; /* 146.667% */
+    }
+}
+
+.my-wallet {
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+.account-info {
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.Lists {
+    margin-top: 16px;
+}
+
+.favorite-item {
+    display: flex;
+    &__thumb {
+        width: 150px;
+        height: 150px;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    &__title {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 146.667%; /* 146.667% */
+    }
+    &__row {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__price {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 145.455%; /* 145.455% */
+    }
+    &__separate {
+        display: block;
+        height: 1px;
+        width: 100%;
+        background: #d2d1d6;
+        margin: 20px 0;
+    }
+}
+
+.new-payment-card__back {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &-icon {
+        rotate: 180deg;
+    }
+}
+
+.new-payment-card__form {
+    margin-top: 30px;
+
+    &-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &-row {
+        @include abstracts.breakpoint(lg) {
+            flex-direction: column;
+            gap: 0;
+        }
+    }
+}

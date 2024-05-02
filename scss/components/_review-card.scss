@@ -2,6 +2,12 @@
     background: var(--review-card-background);
     padding: 30px;
     border-radius: 16px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     &__avatar {
         width: 80px;
         height: 80px;

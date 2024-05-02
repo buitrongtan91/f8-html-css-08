@@ -33,7 +33,7 @@
             <div class="container">
                 <!-- search bar -->
                 <div class="product-container">
-                    <div class="search-bar">
+                    <div class="search-bar" style="background: var(--product-detail-search-bar-background)">
                         <input type="text" name="" id="" class="search-bar__input" placeholder="Search for item" />
                         <button class="search-bar__submit">
                             <img src="./assets/icons/search.svg" alt="" class="search-bar__icon icon" />
@@ -228,19 +228,149 @@
                 </div>
                 <!-- product content -->
                 <div class="product-container">
-                    <div class="product-tab">
+                    <div class="product-tab js-tabs">
                         <ul class="product-tab__list">
-                            <li class="product-tab__item">Description</li>
-                            <li class="product-tab__item">Features</li>
+                            <li class="product-tab__item product-tab__item--current">Description</li>
+
                             <li class="product-tab__item">Review (1100)</li>
-                            <li class="product-tab__item product-tab__item--current">Similar</li>
+                            <li class="product-tab__item">Similar</li>
                         </ul>
                         <div class="product-tab__contents">
-                            <div class="product-tab__content">content</div>
-                            <div class="product-tab__content">content</div>
+                            <div class="product-tab__content product-tab__content--current">
+                                <div class="text-content">
+                                    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, aut?</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam recusandae
+                                        nostrum deserunt? Molestias quos iste magni tenetur officia voluptatibus tempora
+                                        voluptatum. Culpa maxime eius error esse? Cupiditate sapiente eos unde
+                                        repellendus sequi praesentium beatae enim consectetur cumque illo quasi vitae
+                                        doloribus officia aut perferendis molestiae doloremque ex ducimus, laboriosam
+                                        ipsam?
+                                    </p>
+                                    <h3>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque numquam
+                                        distinctio accusamus expedita eos maxime in perferendis ipsum nisi dicta?
+                                    </h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis
+                                        possimus ullam explicabo eveniet quo perspiciatis, asperiores alias iste,
+                                        incidunt sunt dolorum. Numquam magnam vero quo veniam ea, optio adipisci? Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis possimus
+                                        ullam explicabo eveniet quo perspiciatis, asperiores alias iste, incidunt sunt
+                                        dolorum. Numquam magnam vero quo veniam ea, optio adipisci? Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Quam blanditiis possimus ullam explicabo
+                                        eveniet quo perspiciatis, asperiores alias iste, incidunt sunt dolorum. Numquam
+                                        magnam vero quo veniam ea, optio adipisci?
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis
+                                        possimus ullam explicabo eveniet quo perspiciatis, asperiores alias iste,
+                                        incidunt sunt dolorum. Numquam magnam vero quo veniam ea, optio adipisci? Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis possimus
+                                        ullam explicabo eveniet quo perspiciatis, asperiores alias iste, incidunt sunt
+                                        dolorum. Numquam magnam vero quo veniam ea, optio adipisci?
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis
+                                        possimus ullam explicabo eveniet quo perspiciatis, asperiores alias iste,
+                                        incidunt sunt dolorum. Numquam magnam vero quo veniam ea, optio adipisci? Lorem
+                                        ipsum dolor sit amet consectetur adipisicing elit. Quam blanditiis possimus
+                                        ullam explicabo eveniet quo perspiciatis, asperiores alias iste, incidunt sunt
+                                        dolorum. Numquam magnam vero quo veniam ea, optio adipisci? Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Quam blanditiis possimus ullam explicabo
+                                        eveniet quo perspiciatis, asperiores alias iste, incidunt sunt dolorum. Numquam
+                                        magnam vero quo veniam ea, optio adipisci?
+                                    </p>
+
+                                    <hr />
+
+                                    <h2>Lorem ipsum dolor sit amet.</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quod architecto
+                                        deleniti harum iusto officiis ipsa ut nostrum enim minus sunt deserunt iste
+                                        aliquam praesentium, quisquam voluptate modi adipisci numquam a ipsum obcaecati
+                                        ratione libero nisi. Soluta, quos, voluptas delectus natus esse culpa veniam ut
+                                        neque incidunt dignissimos non maiores. Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing elit. Magni quod architecto deleniti harum iusto officiis ipsa ut
+                                        nostrum enim minus sunt deserunt iste aliquam praesentium, quisquam voluptate
+                                        modi adipisci numquam a ipsum obcaecati ratione libero nisi. Soluta, quos,
+                                        voluptas delectus natus esse culpa veniam ut neque incidunt dignissimos non
+                                        maiores.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quod architecto
+                                        deleniti harum iusto officiis ipsa ut nostrum enim minus sunt deserunt iste
+                                        aliquam praesentium, quisquam voluptate modi adipisci numquam a ipsum obcaecati
+                                        ratione libero nisi. Soluta, quos, voluptas delectus natus esse culpa veniam ut
+                                        neque incidunt dignissimos non maiores. Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing elit. Magni quod architecto deleniti harum iusto officiis ipsa ut
+                                        nostrum enim minus sunt deserunt iste aliquam praesentium, quisquam voluptate
+                                        modi adipisci numquam a ipsum obcaecati ratione libero nisi. Soluta, quos,
+                                        voluptas delectus natus esse culpa veniam ut neque incidunt dignissimos non
+                                        maiores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni quod
+                                        architecto deleniti harum iusto officiis ipsa ut nostrum enim minus sunt
+                                        deserunt iste aliquam praesentium, quisquam voluptate modi adipisci numquam a
+                                        ipsum obcaecati ratione libero nisi. Soluta, quos, voluptas delectus natus esse
+                                        culpa veniam ut neque incidunt dignissimos non maiores.
+                                    </p>
+
+                                    <h3>Lorem ipsum dolor sit amet.</h3>
+                                    <p>
+                                        <img src="./assets/img/product-thumb/product-1.png" alt="" />
+                                        <em
+                                            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+                                            repellat?</em
+                                        >
+                                    </p>
+
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, commodi. Eum
+                                        neque fugiat tenetur atque delectus consequatur maiores optio fuga, laboriosam,
+                                        rerum repellat molestiae non ullam iste ipsa assumenda quia. Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Nulla, commodi. Eum neque fugiat tenetur
+                                        atque delectus consequatur maiores optio fuga, laboriosam, rerum repellat
+                                        molestiae non ullam iste ipsa assumenda quia.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, commodi. Eum
+                                        neque fugiat tenetur atque delectus consequatur maiores optio fuga, laboriosam,
+                                        rerum repellat molestiae non ullam iste ipsa assumenda quia. Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Nulla, commodi. Eum neque fugiat tenetur
+                                        atque delectus consequatur maiores optio fuga, laboriosam, rerum repellat
+                                        molestiae non ullam iste ipsa assumenda quia.
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, commodi. Eum
+                                        neque fugiat tenetur atque delectus consequatur maiores optio fuga, laboriosam,
+                                        rerum repellat molestiae non ullam iste ipsa assumenda quia. Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Nulla, commodi. Eum neque fugiat tenetur
+                                        atque delectus consequatur maiores optio fuga, laboriosam, rerum repellat
+                                        molestiae non ullam iste ipsa assumenda quia. Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Nulla, commodi. Eum neque fugiat tenetur atque
+                                        delectus consequatur maiores optio fuga, laboriosam, rerum repellat molestiae
+                                        non ullam iste ipsa assumenda quia.
+                                    </p>
+                                    <blockquote>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, commodi. Eum
+                                            neque fugiat tenetur atque delectus consequatur maiores optio fuga,
+                                            laboriosam, rerum repellat <a href=" ">Klien</a> non ullam iste ipsa
+                                            assumenda quia.
+                                        </p>
+                                    </blockquote>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, commodi. Eum
+                                        neque fugiat tenetur atque delectus consequatur maiores optio fuga, laboriosam,
+                                        rerum repellat molestiae non ullam iste ipsa assumenda quia. Lorem ipsum dolor
+                                        sit amet consectetur adipisicing elit. Nulla, commodi. Eum neque fugiat tenetur
+                                        atque delectus consequatur maiores optio fuga, laboriosam, rerum repellat
+                                        molestiae non ullam iste ipsa assumenda quia.
+                                    </p>
+                                </div>
+                            </div>
                             <div class="product-tab__content">
                                 <h2 class="tab-content__heading">What our customers are saying</h2>
-                                <div class="row row-cols-3 row-cols-lg-1">
+                                <div class="row row-cols-3 row-cols-lg-1 gy-md-3 gy-lg-4">
                                     <div class="col">
                                         <div class="review-card">
                                             <div class="review-card__content">
@@ -306,7 +436,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-tab__content product-tab__content--current">
+                            <div class="product-tab__content">
                                 <div
                                     class="row row-cols-4 row-cols-xxl-2 row-cols-xl-2 row-cols-lg-2 row-cols-md-1 product-list"
                                 >
